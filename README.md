@@ -97,6 +97,6 @@ and then your service will be displayed in your default browser as an app.
 That's it.
 Up to now, you did not create any logic/program code related to this app, and actually you dont need to. Because the RAP framework will create the codes for you. (Do you know, which code I am talking about?)
 
-Now if you want you can continue to create an application based on this service by using Business Application Studio (BAS) in SAP BTP, or Visual Code Studio.
+Now you can continue to create an application based on this service by using Business Application Studio (BAS) in SAP BTP, or Visual Code Studio.
 During creation of the app, you need to pick / create application which will be based on Fiori Element.
 Unfortunately , we will cover that in our next session.
