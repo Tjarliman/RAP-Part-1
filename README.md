@@ -12,3 +12,8 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
 
 - Eclipse installed in your computer
 - Have access to the back end system
+
+#Step 1 - Create data model for the header and detail
+
+
+
