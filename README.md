@@ -50,3 +50,4 @@ In this step, we will create a projection views, metadata extensions, and genera
 
   - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOC_U.txt to create Header Projection view
   - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOCI_U.txt to create Detail Projection view
+  - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
