@@ -1,0 +1,40 @@
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Data Model for FI Document'
+define root view entity ZTJ_I_FIDOC_U
+  as select from ztj_fidoc as header
+  composition [0..*] of ZTJ_I_FIDOCI_U as _item
+  association [0..1] to t001           as _comp on $projection.bukrs = _comp.bukrs
+{
+      @ObjectModel.text.element: ['butxt']
+  key header.bukrs,
+  key header.belnr,
+  key header.gjahr,
+      postdoc,
+      concat('Document#',concat(concat(concat(concat(header.bukrs,'/'),header.belnr),'/'),header.gjahr)) as dockey,
+      header.headertxt,
+      header.waers,
+      header.erdat,
+      header.ernam,
+      header.aedat,
+      header.aenam,
+      case header.status
+            when '1' then 'New'
+            when '2' then 'Posted'
+            when '4' then 'Ready'
+            else 'Canceled'
+      end                                                                                                as Posted,
+      case header.status
+            when '1' then 0 //grey
+            when '2' then 3 //green
+            when '4' then 2 //yellow
+            else 1 //red
+      end                                                                                                as criticality,
+      header.status,
+      budat,
+      bldat,
+      // Make association public
+      _item,
+      _comp,
+      @Semantics.text: true
+      _comp.butxt
+}
