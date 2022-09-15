@@ -39,4 +39,5 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
   - save it, and select the "activate all" button, and select both the header and detail CDS views.
   - ![image](https://user-images.githubusercontent.com/39553318/190332570-189ef939-8bd4-4899-a74f-2b182ae3caa1.png)
 
-
+#Note: There are other CDS views which you need to have them as well in your system like ZTJ_I_FIDOC_SKA1_VH, ZTJ_I_FIDOC_T001_VH, ZTJ_I_FIDOC_TCURC_VH you can just re-use them.
+Once you have activated both the header and detail CDS views, then our next step is to create projection views out of these CDS views.
