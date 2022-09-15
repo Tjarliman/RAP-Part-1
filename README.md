@@ -41,3 +41,12 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
 
 #Note: There are other CDS views which you need to have them as well in your system like ZTJ_I_FIDOC_SKA1_VH, ZTJ_I_FIDOC_T001_VH, ZTJ_I_FIDOC_TCURC_VH you can just re-use them.
 Once you have activated both the header and detail CDS views, then our next step is to create projection views out of these CDS views.
+
+#Step 2. Create Business Service Provisioning.
+
+In this step, we will create a projection views, metadata extensions, and generate the OData services.
+
+#Step 2.1 Create Header and detail Projection Views
+
+  - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOC_U.txt to create Header Projection view
+  - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOCI_U.txt to create Detail Projection view
