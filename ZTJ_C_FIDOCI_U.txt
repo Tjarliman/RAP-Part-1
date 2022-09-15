@@ -1,0 +1,33 @@
+@EndUserText.label: 'Projection View of FI Document Item'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.allowExtensions: true
+
+//@Search.searchable: true
+define view entity ZTJ_C_FIDOCI_U
+  as projection on ZTJ_I_FIDOCI_U
+
+{
+      @Search.defaultSearchElement: true    
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_T001_VH', element: 'Bukrs'} }]  
+  key bukrs,
+
+      @Search.defaultSearchElement: true
+  key belnr,
+
+      @Search.defaultSearchElement: true
+  key gjahr,
+  
+  key buzei,
+      bschl,
+      
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_SKA1_VH', element: 'Hkont'} }]
+      hkont,
+      @Semantics.amount.currencyCode: 'waers'
+      dmbtr,
+      @Semantics.currencyCode: true
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_TCURC_VH', element: 'Waers'} }]
+      waers,
+      itemtxt,
+      /* Associations */
+      _header : redirected to parent ZTJ_C_FIDOC_U
+}
