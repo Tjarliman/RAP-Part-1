@@ -7,3 +7,8 @@ In this part 1, we will see how to implement the concept to build an application
 
 First lesson is that we will create an app as a list of data comming from 2 sources table (Header and detail).
 Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
+
+# Pre-requisites
+
+- Eclipse installed in your computer
+- Have access to the back end system
