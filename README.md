@@ -64,7 +64,7 @@ In this step, we will create a metadata extension for each Header and Detail vie
 
 Once you have activated both the metadata extension views. Then you are ready to expose our projection views as OData service.
 
-#Step 2.3
+#Step 2.3 Create Service Definition
 
 Since in this hands-on, we will only create a list, not a transactional, application then we dont need to create any Behaviour Defitions.
 
@@ -73,3 +73,34 @@ Since in this hands-on, we will only create a list, not a transactional, applica
   - and just a code like below
   - ![image](https://user-images.githubusercontent.com/39553318/190342312-74e59b0b-1054-4642-b57c-eff3a122c953.png)
   - save and activate it.
+
+#Step 2.4 Create Service Binding
+
+In this step, we will publish our service definition to allow any apps to connect to / use this service as an OData service.
+
+  - You should be able to see this screen
+  - ![image](https://user-images.githubusercontent.com/39553318/190343341-d3433d09-1ad9-4f52-929a-78c11d0e302d.png)
+  - Once created, you should be able to see another screen like below
+  - ![image](https://user-images.githubusercontent.com/39553318/190343616-c908db8f-e415-42f3-bf5e-98d496fbc301.png)
+  - Then what you need to do is just clicking the Publish button, once publised you should be able to see something like this 
+  - ![image](https://user-images.githubusercontent.com/39553318/190343787-b390a952-a8c1-4a30-af03-61c2035a8080.png)
+  - No need to activate it
+  
+#Step 2.5 Create an application via Business Studio or Visual Code.
+
+Basically once you have completed until this step. Then you should be able to see how your application would looks like.
+from the last screen you saw on the last step, you can select the header entity (ZTJ_C_FIDOC), then click the Preview button
+![image](https://user-images.githubusercontent.com/39553318/190344770-bff49963-abbd-45e1-829a-b28e9f85c907.png)
+and then your service will be displayed in your default browser as an app.
+
+![image](https://user-images.githubusercontent.com/39553318/190344978-4b38fbea-eeba-476d-85b2-ce52c17a91ad.png)
+That's it.
+Up to now, you did not create any logic/program code related to this app, and actually you dont need to. Because the RAP framework will create the codes for you.
+
+Now if you want you can continue to create an application based on this service by using Business Application Studio (BAS) in SAP BTP, or Visual Code Studio.
+During creation of the app, you need to pick / create application which will be based on Fiori Element.
+
+
+
+
+  - ![image](https://user-images.githubusercontent.com/39553318/190343556-f8d55517-6c3d-4d1e-8ed3-55290f6a25b8.png)
