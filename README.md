@@ -51,3 +51,11 @@ In this step, we will create a projection views, metadata extensions, and genera
   - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOC_U.txt to create Header Projection view
   - create a new CDS view, with type projection view, you can copy and paste the code from the file ZTJ_C_FIDOCI_U.txt to create Detail Projection view
   - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
+  - also dont forget to save and activate both CDS views.
+
+#Step 2.2 Create Metadata extention for Header and Detail Project views.
+
+In this step, we will create a metadata extension for each Header and Detail views. This metada extension is actually another type of CDS view. But, as best practise, we will put some annotations into this view, and these annotations are actually to define which fields are going to be put at the selection field parts or line item part, or Facet...etc.
+
+  - Create metadata extension for header projection view. You can copy and paste the code in file ZTJ_C_FIDOC_U_me.txt
+  - Create metadata extension for detail projection view. You can copy and paste the code in file ZTJ_C_FIDOCI_U_me.txt
