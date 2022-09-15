@@ -1,0 +1,41 @@
+@EndUserText.label: 'Projection View of FI Document'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.allowExtensions: true
+@Search.searchable: true
+define root view entity ZTJ_C_FIDOC_U
+  //provider contract transactional_query
+  as projection on ZTJ_I_FIDOC_U
+  association [0..1] to t001 as _comp on $projection.bukrs = _comp.bukrs
+{
+      @Search.defaultSearchElement: true
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_T001_VH', element: 'Bukrs'} }]
+      @Search.fuzzinessThreshold: 0.7
+      @ObjectModel.text.element: ['butxt']
+  key bukrs,
+  key belnr,
+  key gjahr,
+      dockey,
+      headertxt,
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_TCURC_VH', element: 'Waers'} }]
+      waers,
+      @Semantics.systemDate.createdAt: true
+      erdat,
+      @Semantics.user.createdBy: true
+      ernam,
+      @Semantics.systemDate.lastChangedAt: true
+      aedat,
+      @Semantics.user.lastChangedBy: true
+      aenam,
+      butxt,
+      Posted,
+      criticality,
+      postdoc,
+      status,
+      budat,
+      bldat,
+
+      // Make association public
+      _item : redirected to composition child ZTJ_C_FIDOCI_U,
+      _comp
+
+}
