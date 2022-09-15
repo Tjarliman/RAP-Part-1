@@ -1,0 +1,31 @@
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Data Model for FI Document Item'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+define view entity ZTJ_I_FIDOCI_U
+  as select from ztj_fidoci as g
+  association to parent ZTJ_I_FIDOC_U as _header on  $projection.bukrs = _header.bukrs
+                                                 and $projection.belnr = _header.belnr
+                                                 and $projection.gjahr = _header.gjahr
+{
+  key g.bukrs,
+  key g.belnr,
+  key g.gjahr,
+  key g.buzei,
+      concat('Line#',concat(concat(g.buzei,'/'),g.hkont)) as dockey,
+      g.bschl,
+      //@Consumption.valueHelpDefinition: [{ entity: { name: 'ZTJ_I_FIDOC_SKA1_VH', element: 'Hkont'} }]
+      g.hkont,
+      @Semantics.amount.currencyCode: 'waers'
+      g.dmbtr,
+      g.itemtxt,    
+      _header.waers                                       as waers,
+      _header
+
+
+}
