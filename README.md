@@ -99,8 +99,4 @@ Up to now, you did not create any logic/program code related to this app, and ac
 
 Now if you want you can continue to create an application based on this service by using Business Application Studio (BAS) in SAP BTP, or Visual Code Studio.
 During creation of the app, you need to pick / create application which will be based on Fiori Element.
-
-
-
-
-  - ![image](https://user-images.githubusercontent.com/39553318/190343556-f8d55517-6c3d-4d1e-8ed3-55290f6a25b8.png)
+Unfortunately , we will not cover that in our next session.
