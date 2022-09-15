@@ -32,4 +32,11 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
   - ![image](https://user-images.githubusercontent.com/39553318/190317063-e59b686c-10ad-43ed-b5fd-08d85f50f4a0.png)
   - save it, but dont activate it yet since you need to create another CDS view which is the detail CDS view
 
+#Step 1.3 - Create Detail CDS view
+
+  - create another CDS view, and copy and paste the code from file ZTJ_I_FIDOCI.txt to this new CDS view
+  - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
+  - save it, and select the "activate all" button, and select both the header and detail CDS views.
+  - ![image](https://user-images.githubusercontent.com/39553318/190332570-189ef939-8bd4-4899-a74f-2b182ae3caa1.png)
+
 
