@@ -1,0 +1,45 @@
+@Metadata.layer: #CORE
+
+@UI: { headerInfo: { typeName: 'Item',
+                     typeNamePlural: 'Items',
+                     title: { type: #STANDARD,
+                              value: 'buzei' } } }
+
+annotate view ZTJ_C_FIDOCI_U with
+{
+  @UI.facet: [ { id:            'Item',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Line Item',
+                 position:      10 } ]
+
+  @UI: { lineItem:       [ { position: 10,
+                                 importance: #HIGH } ],
+             identification: [ { position: 10 } ],
+             selectionField: [ { position: 10 } ] }
+  buzei;
+
+  @UI: { lineItem:       [ { position: 20,
+                               importance: #HIGH } ],
+           identification: [ { position: 20 } ],
+           selectionField: [ { position: 20 } ] }
+  bschl;
+
+  @UI: { lineItem:       [ { position: 30,
+                               importance: #HIGH } ],
+           identification: [ { position: 30 } ],
+           selectionField: [ { position: 30 } ] }
+
+  hkont;
+
+  @UI: { lineItem:       [ { position: 40,
+                               importance: #HIGH } ],
+           identification: [ { position: 40 } ],
+           selectionField: [ { position: 40 } ] }
+  dmbtr;
+  
+  @UI: { lineItem:       [ { position: 50,
+                               importance: #HIGH } ],
+           identification: [ { position: 50 } ] }
+  itemtxt;
+}
