@@ -18,7 +18,7 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
 #Step 1.1 - Create ABAP Project
 
   - Open Eclipse
-  - Create ABAP Project and make the project connected to your backend system 
+  - Create ABAP Project and make sure the project connected to your backend system 
   - ![image](https://user-images.githubusercontent.com/39553318/190315283-8c2d53cd-4cd0-45e4-a317-2106d9a737cf.png)
   - ![image](https://user-images.githubusercontent.com/39553318/190315672-f463e078-cd99-41aa-aaf8-2d6e66127f25.png)
   - Follow the instruction from the wizard, until you create a project in your eclipse
