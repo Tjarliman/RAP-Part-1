@@ -15,5 +15,15 @@ Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
 
 #Step 1 - Create data model for the header and detail
 
+  - Open Eclipse
+  - Create ABAP Project and make the project connected to your backend system 
+  - ![image](https://user-images.githubusercontent.com/39553318/190315283-8c2d53cd-4cd0-45e4-a317-2106d9a737cf.png)
+  - ![image](https://user-images.githubusercontent.com/39553318/190315672-f463e078-cd99-41aa-aaf8-2d6e66127f25.png)
+  - Follow the instruction from the wizard, until you create a project in your eclipse
+  - ![image](https://user-images.githubusercontent.com/39553318/190315900-4da82a5a-8e49-4f3f-aee5-89db0a1f0fa4.png)
 
+#Step 1.1 - Create Header CDS view
+
+  - inside the created ABAP project, create a CDS view and we are going to put it as a header view, let's put a name Znn_FIDOC where nn is your unique ID (but you cannot use ID which is already used by other participants)
+  - get the file ZTJ_I_FIDOC_U.txt, and copy and past the code in that file to your CDS view
 
