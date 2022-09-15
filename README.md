@@ -59,3 +59,17 @@ In this step, we will create a metadata extension for each Header and Detail vie
 
   - Create metadata extension for header projection view. You can copy and paste the code in file ZTJ_C_FIDOC_U_me.txt
   - Create metadata extension for detail projection view. You can copy and paste the code in file ZTJ_C_FIDOCI_U_me.txt
+  - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
+  - also dont forget to save and activate both CDS views.
+
+Once you have activated both the metadata extension views. Then you are ready to expose our projection views as OData service.
+
+#Step 2.3
+
+Since in this hands-on, we will only create a list, not a transactional, application then we dont need to create any Behaviour Defitions.
+
+  - Create a service definitions, and name it similar to this name (followed our naming convention), ZTJ_UI_C_FIDOC_U.
+  - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
+  - and just a code like below
+  - ![image](https://user-images.githubusercontent.com/39553318/190342312-74e59b0b-1054-4642-b57c-eff3a122c953.png)
+  - save and activate it.
