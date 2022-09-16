@@ -1,0 +1,32 @@
+@EndUserText.label : 'Document Item'
+@AbapCatalog.enhancementCategory : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table ztj_fidoci {
+  @AbapCatalog.foreignKey.keyType : #KEY
+  @AbapCatalog.foreignKey.screenCheck : true
+  key mandt : mandt not null
+    with foreign key [1,0..1] t000
+      where mandt = ztj_fidoci.mandt;
+  @AbapCatalog.foreignKey.keyType : #KEY
+  @AbapCatalog.foreignKey.screenCheck : true
+  key bukrs : bukrs not null
+    with foreign key [0..*,1] t001
+      where mandt = ztj_fidoci.mandt
+        and bukrs = ztj_fidoci.bukrs;
+  key belnr : belnr_d not null;
+  key gjahr : gjahr not null;
+  key buzei : buzei not null;
+  bschl     : bschl;
+  hkont     : hkont;
+  @Semantics.amount.currencyCode : 'ztj_fidoc.waers'
+  dmbtr     : dmbtr;
+  itemtxt   : sgtxt;
+  shkzg     : shkzg;
+  erdat     : erdat;
+  ernam     : ernam;
+  aedat     : aedat;
+  aenam     : aenam;
+
+}
