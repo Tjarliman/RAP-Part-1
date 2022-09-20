@@ -25,10 +25,7 @@ annotate view ZTJ_C_FIDOC_U with
          selectionField: [ { position: 1 } ] }
   Posted;
 
-  @UI: { lineItem:       [ { position: 2, importance: #HIGH, label : 'Status' },
-                           { type: #FOR_ACTION, dataAction:'simulate', label: 'Simulate' },
-                           { type: #FOR_ACTION, dataAction:'post', label: 'Post' },
-                           { type: #FOR_ACTION, dataAction:'update', label: 'Edit' } ]}
+  @UI: { lineItem:       [ { position: 2, importance: #HIGH, label : 'Status' }]}
   @UI.hidden: true
   status;
 
