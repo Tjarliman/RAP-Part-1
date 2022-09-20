@@ -14,6 +14,7 @@ Header source table name ZTJ_FIDOC, detail source table name ZTJ_FIDOCI. We wil 
 - Eclipse installed in your computer
 - Have access to the back end system
 - You have your own package, and TR to all your created artifacts into it.
+- Example: Znn_FIDOC. nn is your unique id. 
 
 #Step 1 - Create data model for the header and detail
 
