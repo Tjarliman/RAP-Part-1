@@ -69,6 +69,10 @@ Once you have activated both the metadata extension views. Then you are ready to
 Since in this hands-on, we will only create a list, not a transactional, application then we dont need to create any Behaviour Defitions.
 
   - Create a service definitions, and name it similar to this name (followed our naming convention), ZTJ_UI_C_FIDOC_U.
+  - Right click on one the consumption views then select Create Service Definition
+  
+  ![image](https://user-images.githubusercontent.com/39553318/191144715-eebd57f5-9f0b-4213-a652-06ed50824057.png)
+
   - dont forget to change the name of the entity, example: ZTJ_xxx -> Znn_xxx
   - and just a code like below
   - ![image](https://user-images.githubusercontent.com/39553318/190342312-74e59b0b-1054-4642-b57c-eff3a122c953.png)
@@ -78,6 +82,8 @@ Since in this hands-on, we will only create a list, not a transactional, applica
 
 In this step, we will publish our service definition to allow any apps to connect to / use this service as an OData service.
 
+  - Right click on the Service Definition you created in the previous step
+  - Click Create Service Binding
   - You should be able to see this screen
   - ![image](https://user-images.githubusercontent.com/39553318/190343341-d3433d09-1ad9-4f52-929a-78c11d0e302d.png)
   - Once created, you should be able to see another screen like below
