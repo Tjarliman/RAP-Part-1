@@ -92,10 +92,10 @@ In this step, we will publish our service definition to allow any apps to connec
   - ![image](https://user-images.githubusercontent.com/39553318/190343787-b390a952-a8c1-4a30-af03-61c2035a8080.png)
   - No need to activate it
   
-#Step 2.5 Create an application via Business Studio or Visual Code.
+#Step 2.5 Preview the OData Service.
 
 Basically once you have completed until this step. Then you should be able to see how your application would looks like.
-from the last screen you saw on the last step, you can select the header entity (ZTJ_C_FIDOC), then click the Preview button
+From the last screen you saw on the last step, you can select the header entity (ZTJ_C_FIDOC), then click the Preview button
 ![image](https://user-images.githubusercontent.com/39553318/190344770-bff49963-abbd-45e1-829a-b28e9f85c907.png)
 and then your service will be displayed in your default browser as an app.
 
