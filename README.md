@@ -66,7 +66,7 @@ Once you have activated both the metadata extension views. Then you are ready to
 
 #Step 2.3 Create Service Definition
 
-Since in this hands-on, we will only create a list, not a transactional, application then we dont need to create any Behaviour Defitions.
+Since in this hands-on, we will only create a list, not a transactional application then we dont need to create any Behaviour Defitions.
 
   - Create a service definitions, and name it similar to this name (followed our naming convention), ZTJ_UI_C_FIDOC_U.
   - Right click on one the consumption views then select Create Service Definition
