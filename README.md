@@ -99,7 +99,8 @@ From the last screen you saw on the last step, you can select the header entity 
 ![image](https://user-images.githubusercontent.com/39553318/190344770-bff49963-abbd-45e1-829a-b28e9f85c907.png)
 and then your service will be displayed in your default browser as an app.
 
-![image](https://user-images.githubusercontent.com/39553318/190344978-4b38fbea-eeba-476d-85b2-ce52c17a91ad.png)
+![image](https://user-images.githubusercontent.com/39553318/191235149-84315a0d-a16b-47b8-a528-bafa95a06b2a.png)
+
 That's it.
 Up to now, you did not create any logic/program code related to this app, and actually you dont need to. Because the RAP framework will create the codes for you. (Do you know, which code I am talking about?)
 
