@@ -5,13 +5,15 @@ In this part 1, we will see how to implement the concept to build an application
 
 # Create a list (Header-detail)
 
-First lesson is that we will create an app as a list of data comming from 2 sources table (Header and detail).
-Header table name ZTJ_FIDOC, detail table name ZTJ_FIDOCI
+In this first lesson, we will create an app as a list of data comming from 2 sources table (Header and detail).
+In this app, there will be a list of header list as a main report, then from each of the header item, we are able to navigate to the item level.
+Header source table name ZTJ_FIDOC, detail source table name ZTJ_FIDOCI. We wil use these 2 tables throughout the session (1 and 2).
 
 # Pre-requisites
 
 - Eclipse installed in your computer
 - Have access to the back end system
+- You have your own package, and TR to all your created artifacts into it.
 
 #Step 1 - Create data model for the header and detail
 
