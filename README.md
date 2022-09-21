@@ -1,4 +1,4 @@
-# Restful ABAP Programming Model Concept-Part-1
+# Restful ABAP Programming Model-Part-1
 
 This document intended for internal discussion to understand the concept and start hands-on into the RAP.
 In this part 1, we will see how to implement the concept to build an application.
