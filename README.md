@@ -1,11 +1,11 @@
 # ABAP Restful Programming Model Concept-Part-1
 
-This document intended for internal session to understand the concept and start hands-on into the RAP.
+This document intended for internal discussion to understand the concept and start hands-on into the RAP.
 In this part 1, we will see how to implement the concept to build an application.
 
 # Create a list (Header-detail)
 
-In this first lesson, we will create an app as a list of data comming from 2 sources table (Header and detail).
+For first lesson, we will create an app as a list of data comming from 2 sources table (Header and detail).
 In this app, there will be a list of header list as a main report, then from each of the header item, we are able to navigate to the item level.
 Header source table name ZTJ_FIDOC, detail source table name ZTJ_FIDOCI. We wil use these 2 tables throughout the session (1 and 2).
 
